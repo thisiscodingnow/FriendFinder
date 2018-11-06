@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder </title>
+
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png" />
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="jumbotron" style="background:#3b5998;color:#fff;padding-bottom:80px">
+      <h1 class="text-center"><span class="fa fa-users"></span> Friend Finder</h1>
+      <hr>
+      <h2 class="text-center">Complete the Survey to find your best match !</h2>
+      <br>
+
+      <div class="text-center">
+        <a href="/home"><button class="btn btn-lg btn-default" style="border-color:#3b5998"><span class="fa fa-list-alt"></span>
+            Home</button></a>
+        <a href="/"><button class="btn btn-lg btn-default"><span class="fa fa-home"></span></button></a>
+      </div>
+    </div>
+
+    <div class="row" style="Margin:30px">
+      <div class="col-lg-12">
+
+        <!-- survey page -->
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">About you</h4>
+          </div>
+          <div class="panel-body">
+
+            <form role="form">
+
+              <div class="form-group">
+                <label for="friendFinderName">Name (Required) </label>
+                <input type="text" class="form-control" id="friendFinderName" required>
+              </div>
+
+              <div class="form-group">
+                <label for="friendFinderPhotoLink">Link to Photo Image (Required)</label>
+                <input type="link" class="form-control" id="friendFinderPhotoLink" required>
+              </div>
+
+              <div class="form-group">
+                <label for="Q1"><h4>Question 1</h4></label>
+                <h5>you have pets or like animals.</h5>
+                <select class="form-control" id="Q1" required>
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q2"><h4>Question 2</h4></label>
+                <h5>you consider yourself as extrovert </h5>
+                <select class="form-control" id="Q2">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Q3"><h4>Question 3</h4></label>
+                <h5> you have a vivid imagination.</h5>
+                <select class="form-control" id="Q3">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q4"><h4>Question 4</h4></label>
+                <h5>you feel sympathy for those who are worse off than myself</h5>
+                <select class="form-control" id="Q4">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Q5"><h4>Question 5</h4></label>
+                <h5>you find it difficult to approach others.</h5>
+                <select class="form-control" id="Q5">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q6"><h4>Question 6</h4></label>
+                <h5>Generally speaking, you adapt to change quickly.</h5>
+                <select class="form-control" id="Q6">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q7"><h4>Question 7</h4></label>
+                <h5>you see beauty in things that others might not notice.</h5>
+                <select class="form-control" id="Q7">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="Q8"><h4>Question 8</h4></label>
+                <h5>you believe that there is no absolute right and wrong.</h5>
+                <select class="form-control" id="Q8">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q9"><h4>Question 9</h4></label>
+                <h5>you believe that criminals should receive help rather than punishment.</h5>
+                <select class="form-control" id="Q9">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="Q10"><h4>Question 10</h4></label>
+                <h5>you make friends easily.</h5>
+                <select class="form-control" id="Q10">
+                  <option selected hidden value="">select an option</option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary submit" style="width:100%;background:#3b5998;color:#fff">Submit</button>
+            </form>
+
+            <br>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left:50px">Open
+      Modal
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalTitleId" style="color:red"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h2 id="matchName" style="color:purple"></h2>
+            <img id="matchPhoto" src="" alt="" height="350" width="300">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-seondary" data-dismiss="modal" id="modalClose">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of Modal -->
+
+    <footer class="footer" style="text-align:center;padding:10px;margin:10px;background-color:#aaa">
+      <div class="container">
+        <p><a href="/api/friends">API Friends Link</a> | <a href="https://github.com/BethGmariam/Friend-Finder-App" target="_blank">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
+
+<!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
+<script type="text/javascript">
+
+  //Front-end JavaScript which "POSTS" our form data to our express server.
+  $(".submit").on("click", function (event) {
+    event.preventDefault();
+
+    //******************************
+    // all field should be fill out 
+    function formValidatorFn() {
+      var flag = true;
+      $(".form-control").each(function () {
+        if ($(this).val() == "") {
+          flag = false;
+        }
+
+      })
+
+      return flag;
+
+    }
+    //******************************
+
+
+
+   
+    // Here we grab the form elements
+    var newFriend = {};
+    if (formValidatorFn()==true) {
+      newFriend = {
+        name: $("#friendFinderName").val().trim(),
+        photoLink: $("#friendFinderPhotoLink").val().trim(),
+        score: [
+         $("#Q1").val().trim(),
+         $("#Q2").val().trim(),
+         $("#Q3").val().trim(),
+         $("#Q4").val().trim(),
+         $("#Q5").val().trim(),
+         $("#Q6").val().trim(),
+         $("#Q7").val().trim(),
+         $("#Q8").val().trim(),
+         $("#Q9").val().trim(),
+         $("#Q10").val().trim()
+         ]
+
+      };
+
+
+      var currentURL = window.location.origin;
+      // alert(currentURL)
+
+      $.post(currentURL + "/api/friends", newFriend, function (data) {
+
+        // If a match found... display the result as a modal pop-up.
+        if (data) {
+          console.log(data)
+          $("#modalTitleId").text("We found your best match:");
+          $("#matchName").text(data.name);
+          $("#matchPhoto").attr("src", data.photoLink);
+          $("#myModal").modal('toggle');
+        }
+
+        // if no match found display this
+        else {
+          alert("NO Match Found!")
+        }
+
+        // Clear the form when submitting
+        //******************************
+        $("#friendFinderName").val("");
+        $("#friendFinderPhotoLink").val("");
+        $("#Q1").val("");
+        $("#Q2").val("");
+        $(".form-control").each(function () {
+          $(this).val("")
+        })
+        //******************************
+
+      });
+
+    }
+    // if form is not completed 
+    else {
+      alert("ALL fields are required")
+    }
+
+  });
+
+  $('#modalClose').click(function () {
+    $.get('/', function (req, res) {
+      location.replace(res);
+    })
+  })
+
+
+
+</script>
